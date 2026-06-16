@@ -10,5 +10,5 @@ export function absoluteUrl(path: string) {
 }
 
 export function getRegistryItemInstallationAlias(itemName: string) {
-  return `https://shadcn-registry-docs-template.pages.dev/r/${itemName}.json`;
+  return `https://nitc.ntuniso.net/r/${itemName}.json`;
 }
