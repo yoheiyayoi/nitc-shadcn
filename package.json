@@ -1,5 +1,5 @@
 {
-	"name": "shadcn-registry-docs-template",
+	"name": "nit-components",
 	"private": true,
 	"workspaces": [
 		"apps/*",
