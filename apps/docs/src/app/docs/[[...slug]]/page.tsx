@@ -15,12 +15,12 @@ export default async function Page(props: {
   params: Promise<{ slug: string[] }>;
 }) {
   const params = await props.params;
-  const page = source.getPage(params.slug);
+  const page: any = source.getPage(params.slug);
   if (!page) {
     notFound();
   }
 
-  const doc = page.data;
+  const doc: any = page.data;
   const MDX = doc.body;
   const isChangelog = params.slug?.[0] === "changelog";
   const neighbours = isChangelog
