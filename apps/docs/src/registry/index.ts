@@ -12,8 +12,8 @@ export const TEMPLATE_STYLE = {
 };
 
 export const registry = {
-  name: "shadcn-registry-docs-template/ui",
-  homepage: "https://shadcn-registry-docs-template.pages.dev/",
+  name: "nitc-shadcn/ui",
+  homepage: "https://nitc-shadcn.vercel.app/",
   items: [
     {
       name: "index",
