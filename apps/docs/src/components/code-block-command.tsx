@@ -68,7 +68,7 @@ export function CodeBlockCommandWrapper({
     <div className="relative overflow-x-auto">
       <Tabs
         value={packageManager}
-        className="gap-0"
+        className="gap-0 flex flex-col"
         onValueChange={(value) => {
           setConfig({
             ...config,
@@ -114,20 +114,18 @@ export function CodeBlockCommandWrapper({
         </div>
       </Tabs>
       <Tooltip>
-        <TooltipTrigger
-          render={
-            <Button
-              data-slot="copy-button"
-              size="icon"
-              variant="ghost"
-              className="absolute right-2 top-2 z-10 size-7 opacity-70 hover:opacity-100 focus-visible:opacity-100"
-              onClick={copyCommand}
-            >
-              <span className="sr-only">Copy</span>
-              {hasCopied ? <CheckIcon /> : <CopyIcon />}
-            </Button>
-          }
-        />
+        <TooltipTrigger asChild>
+          <Button
+            data-slot="copy-button"
+            size="icon"
+            variant="ghost"
+            className="absolute right-2 top-2 z-10 size-7 opacity-70 hover:opacity-100 focus-visible:opacity-100"
+            onClick={copyCommand}
+          >
+            <span className="sr-only">Copy</span>
+            {hasCopied ? <CheckIcon /> : <CopyIcon />}
+          </Button>
+        </TooltipTrigger>
         <TooltipContent>Copy</TooltipContent>
       </Tooltip>
     </div>

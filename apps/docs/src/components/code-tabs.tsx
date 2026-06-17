@@ -18,7 +18,7 @@ export function CodeTabs({ children }: React.ComponentProps<typeof Tabs>) {
       onValueChange={(value) =>
         setConfig({ ...config, installationType: value as "cli" | "manual" })
       }
-      className="relative mt-6 w-full"
+      className="relative mt-6 w-full flex flex-col"
     >
       {children}
     </Tabs>

@@ -22,17 +22,16 @@ export function MainNav({
           variant="ghost"
           size="sm"
           className="px-2.5"
-          nativeButton={false}
-          render={
-            <Link
-              href={item.href}
-              data-active={pathname === item.href}
-              className="relative items-center"
-            >
-              {item.label}
-            </Link>
-          }
-        />
+          asChild
+        >
+          <Link
+            href={item.href}
+            data-active={pathname === item.href}
+            className="relative items-center"
+          >
+            {item.label}
+          </Link>
+        </Button>
       ))}
     </nav>
   );
