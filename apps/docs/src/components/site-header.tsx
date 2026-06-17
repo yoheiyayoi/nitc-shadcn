@@ -13,7 +13,7 @@ export function SiteHeader() {
   const pageTree = source.pageTree;
 
   return (
-    <header className="sticky py-2 top-0 z-50 w-full bg-background border-b">
+    <header className="fixed py-2 top-0 z-50 w-full bg-background border-b">
       <div className="container-wrapper px-6 3xl:fixed:px-0">
         <div className="flex h-(--header-height) items-center **:data-[slot=separator]:h-4! 3xl:fixed:container">
           <MobileNav
