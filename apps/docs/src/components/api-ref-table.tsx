@@ -66,27 +66,23 @@ function ApiRefRow({ prop }: { prop: ApiProp }) {
 
   if (hasDetails) {
     return (
-      <Collapsible
-        open={open}
-        onOpenChange={setOpen}
-        render={({ children }) => <>{children}</>}
-      >
-        <CollapsibleTrigger
-          nativeButton={false}
-          render={(props) => (
+      <Collapsible open={open} onOpenChange={setOpen} asChild>
+        <div>
+          <CollapsibleTrigger asChild>
             <TableRow
-              {...props}
               className="cursor-pointer focus-visible:outline-none focus-visible:bg-muted/70"
-            />
-          )}
-        >
-          {cells}
-        </CollapsibleTrigger>
-        <CollapsibleContent render={(props) => <TableRow {...props} />}>
-          <TableCell colSpan={3} className="text-xs text-muted-foreground">
-            {prop.description}
-          </TableCell>
-        </CollapsibleContent>
+            >
+              {cells}
+            </TableRow>
+          </CollapsibleTrigger>
+          <CollapsibleContent asChild>
+            <TableRow>
+              <TableCell colSpan={3} className="text-xs text-muted-foreground">
+                {prop.description}
+              </TableCell>
+            </TableRow>
+          </CollapsibleContent>
+        </div>
       </Collapsible>
     );
   }
