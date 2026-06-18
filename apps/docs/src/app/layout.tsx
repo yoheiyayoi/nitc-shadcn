@@ -17,8 +17,8 @@ const googleSans = Google_Sans({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - NITC",
-    default: "NITC",
+    template: "%s - NITC shadcn",
+    default: "NITC shadcn",
   },
   description:
     "nit-components is a collection of shadcn/ui components for ntuniso projects by yohei_yayoi!",
