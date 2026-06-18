@@ -1,0 +1,61 @@
+---
+title: Footer
+description: Footer component for ntuniso website.
+---
+
+## Footer-01
+ps. This component require ntun logo (if needed) due to ntun logo did not auto install with shadcn
+<ComponentPreview name="footer-01-demo" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTrigger value="cli">Command</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+
+<CodeBlockCommand command="npx shadcn@latest add https://nitc-shadcn.vercel.app/r/footer-01.json" />
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps className="mb-0 pt-2">
+
+<Step>Install the following dependencies:</Step>
+
+<CodeBlockCommand command="npm install radix-ui" />
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="footer-01"
+  title="components/ui/footer-01.tsx"
+  styleName="base-nova"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</CodeTabs>
+
+
+## Usage
+
+```tsx
+import { Footer01 } from "@/components/ui/footer-01"
+```
+
+```tsx
+<Footer01 />
+```
+
+## Reference
+Nothing

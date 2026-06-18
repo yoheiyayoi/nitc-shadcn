@@ -20,7 +20,7 @@ export default function HomePage() {
           ps. NITC stands for "NTUN IT Components"
         </p>
 
-        <Alert className="border-amber-200 bg-amber-100 text-amber-900">
+        <Alert className="border-amber-300 bg-amber-100 dark:bg-amber-200 text-amber-900">
           <InfoIcon />
           <AlertTitle>This is shadcn/ui version! if you looking for heroui version please go to (link)</AlertTitle>
         </Alert>

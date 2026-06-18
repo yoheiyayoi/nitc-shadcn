@@ -36,11 +36,24 @@
       "name": "button",
       "type": "registry:ui",
       "dependencies": [
-        "@base-ui/react"
+        "radix-ui"
       ],
       "files": [
         {
           "path": "src/registry/new-york-v4/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "footer-01",
+      "type": "registry:ui",
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/ui/footer-01.tsx",
           "type": "registry:ui"
         }
       ]
@@ -54,6 +67,16 @@
       "files": [
         {
           "path": "src/registry/new-york-v4/examples/button-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "footer-01-demo",
+      "type": "registry:example",
+      "files": [
+        {
+          "path": "src/registry/new-york-v4/examples/footer-01-demo.tsx",
           "type": "registry:example"
         }
       ]
