@@ -34,7 +34,7 @@ export default function Layout({ children }: LayoutProps<"/">) {
     >
       <body className="flex flex-col min-h-screen">
         <Provider>
-          <SiteHeader />
+          {/* <SiteHeader /> */}
           {children}
         </Provider>
       </body>
