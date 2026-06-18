@@ -4,7 +4,6 @@ import { Provider } from "@/components/provider";
 
 import "./global.css";
 import type { Metadata } from "next";
-import { SiteHeader } from "@/components/site-header";
 
 const inter = Inter({
   subsets: ["latin"],
